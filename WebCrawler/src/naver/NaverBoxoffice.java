@@ -61,6 +61,13 @@ public class NaverBoxoffice {
 			int diCode=0; //감독 유무 확인
 			int acCode=0; //출연진 유무 확인
 			
+			/*
+			 * equals() : 동등비교(객체자료형 String)
+			 * 객체자료형은 변수에 저장한 값의 주소가 들어있기 때문에 ==을 사용할 수 없다.
+			 * equals는 객체자료형 변수의 실제 값을 가져와 서로 비교한다.
+			 * ==를 사용해도 오류가 발생하진 않지만 결과값으로 False를 출력한다.
+			 * == : 동등비교(기본자료형)
+			 */
 			if (!movie.select("dt.tit_t2").text().equals("")) {
 				diCode=1; //감독이 있는 경우
 			}
