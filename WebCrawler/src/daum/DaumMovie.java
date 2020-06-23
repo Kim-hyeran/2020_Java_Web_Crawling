@@ -26,6 +26,7 @@ public class DaumMovie {
 			
 			Elements replyList=doc.select("div.main_detail li");
 			
+			//네이버 영화 페이지와는 달리 빈 페이지를 출력하기 때문에 조건문이 달라진다.
 		    if(replyList.size()==0) {
 		        break;
 		    }
